@@ -26,6 +26,67 @@
 
 </head>
 <style>
+      .promo-posters-section .poster-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .promo-posters-section .poster-wrapper a {
+        display: block;
+        text-decoration: none;
+        box-shadow: 0 8px 30px rgba(26, 42, 74, 0.12);
+        border-radius: 16px;
+        overflow: hidden;
+        width: 100%;
+        flex: 1;
+    }
+    
+    .promo-posters-section .poster-wrapper .img-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 75%; /* 4:3 Aspect Ratio */
+        overflow: hidden;
+        border-radius: 16px;
+    }
+    
+    .promo-posters-section .poster-wrapper .img-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+        transition: 0.3s;
+        background: #ffffff;
+        padding: 10px;
+    }
+    
+    .promo-posters-section .poster-wrapper:hover img {
+        transform: scale(1.03);
+    }
+    
+    /* Responsive Aspect Ratios */
+    @media (max-width: 768px) {
+        .promo-posters-section .poster-wrapper .img-container {
+            padding-bottom: 85%;
+        }
+        .promo-posters-section .poster-wrapper {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .promo-posters-section .poster-wrapper .img-container {
+            padding-bottom: 100%;
+        }
+        .promo-posters-section .poster-wrapper {
+            max-width: 320px;
+        }
+    }
     .floating-contact {
   position: fixed;
   right: 20px;
@@ -420,12 +481,7 @@
 
                     <p class="des">
                         Iyappa Cabs has been serving customers for more than
-                        <strong>19 years</strong> with reliable taxi services,
-                        airport transfers, outstation trips, local sightseeing,
-                        corporate travel, and customized South India tour packages.
-                        Our mission is to provide safe, comfortable, and affordable
-                        travel experiences with professional drivers and
-                        well-maintained vehicles.
+                        <strong>19 years</strong> with reliable taxi services. We offer comprehensive cab and travel services to meet all your transportation needs. Whether it's local commutes or long-distance journeys, our reliable fleet and experienced drivers ensure safe and comfortable travels. With a commitment to customer satisfaction, we prioritize punctuality, affordability, and professionalism in every ride. Experience hassle-free travel with Iyappa Cabs, your trusted partner on the road.
                     </p>
                 </div>
 
@@ -500,22 +556,24 @@
 
                 <div class="flex-three btn-wrap-about">
 
-                    <a href="contact-us.html" class="btn-main">
+                    <!-- Contact Us Button with hidden link -->
+                    <a href="https://mikivcard.com/iyappa-cabs" target="_blank" class="btn-main" style="text-decoration: none;">
                         <p class="btn-main-text">Contact Us</p>
                         <p class="iconer">
                             <i class="icon-arrow-right"></i>
                         </p>
                     </a>
 
-                    <div class="profile flex-three">
+                    <!-- Profile with hidden link -->
+                    <a href="https://mikivcard.com/iyappa-cabs" target="_blank" class="profile flex-three" style="text-decoration: none; cursor: pointer;">
                         <div class="image">
-                            <img src="assets/images/avata/10.jpg" alt="">
+                            <img src="assets/images/logo1.png" alt="">
                         </div>
                         <div class="content">
-                            <h6>Iyappa Cabs</h6>
+                            <h6 style="color: #1a2a4a;">Iyappa Cabs</h6>
                             <span class="text-main">19+ Years of Trusted Service</span>
                         </div>
-                    </div>
+                    </a>
 
                 </div>
 
@@ -662,6 +720,49 @@
                     </div>
                 </section>
                 <!-- Widget Counter to -->
+
+                <!-- ===== PROMOTIONAL POSTERS SECTION - ADD IMAGES HERE ===== -->
+<section class="promo-posters-section" style="padding: 40px 0 50px; background: #f8faff;">
+    <div class="tf-container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <span class="sub-title-heading text-main fs-28-46 font-yes wow fadeInUp animated" style="color: #c8962d;">
+                        Special Offers
+                    </span>
+                    <h2 class="title-heading wow fadeInUp animated" style="color: #1a2a4a;">
+                        Exclusive <span class="text-gray font-yes" style="color: #c8962d;">Tour Packages</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row" style="display: flex; flex-wrap: wrap; align-items: stretch; justify-content: center;">
+            <!-- Poster 1 -->
+            <div class="col-md-5 col-sm-10 mb-30" style="display: flex; justify-content: center;">
+                <div class="poster-wrapper">
+                    <a href="contact-us.html">
+                        <div class="img-container">
+                            <img src="assets/images/poster1.jpeg" alt="One Day Coimbatore Round Trip - Iyappa Cabs">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Poster 2 -->
+            <div class="col-md-5 col-sm-10 mb-30" style="display: flex; justify-content: center;">
+                <div class="poster-wrapper">
+                    <a href="contact-us.html">
+                        <div class="img-container">
+                            <img src="assets/images/poster2.jpeg" alt="Iyappa Cabs - All Type of Vehicles Available">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ===== PROMOTIONAL POSTERS SECTION END ===== -->
                 <!-- Widget Feature -->
                 <section class="widget-feature overflow-hidden pd-main relative">
                     <div class="bg-ab-feature bg-1">
@@ -1412,23 +1513,23 @@ Valparai</a></div>
                             <h5 class="title">Gallery</h5>
 
                             <div class="gallery-img">
-                                <a href="assets/images/gallery/gl1.jpg" data-fancybox="gallery">
-                                    <img src="assets/images/gallery/gl1.jpg" alt="image gallery">
+                                <a href="assets/images/gallery1.jpeg" data-fancybox="gallery">
+                                    <img src="assets/images/gallery1.jpeg" alt="image gallery">
                                 </a>
-                                <a href="assets/images/gallery/gl2.jpg" data-fancybox="gallery">
-                                    <img src="assets/images/gallery/gl2.jpg" alt="image gallery">
+                                <a href="assets/images/gallery13.jpg" data-fancybox="gallery">
+                                    <img src="assets/images/gallery13.jpg" alt="image gallery" style="height: 63px;">
                                 </a>
-                                <a href="assets/images/gallery/gl3.jpg" data-fancybox="gallery">
-                                    <img src="assets/images/gallery/gl3.jpg" alt="image gallery">
+                                <a href="assets/images/gallery14.jpg" data-fancybox="gallery">
+                                    <img src="assets/images/gallery14.jpg" alt="image gallery"style="height: 63px;">
                                 </a>
-                                <a href="assets/images/gallery/gl4.jpg" data-fancybox="gallery">
-                                    <img src="assets/images/gallery/gl4.jpg" alt="image gallery">
+                                <a href="assets/images/gallery15.jpg" data-fancybox="gallery">
+                                    <img src="assets/images/gallery15.jpg" alt="image gallery"style="height: 63px;">
                                 </a>
-                                <a href="assets/images/gallery/gl5.jpg" data-fancybox="gallery">
-                                    <img src="assets/images/gallery/gl5.jpg" alt="image gallery">
+                                <a href="assets/images/gallery9.jpeg" data-fancybox="gallery">
+                                    <img src="assets/images/gallery9.jpeg" alt="image gallery"style="height: 63px;">
                                 </a>
-                                <a href="assets/images/gallery/gl6.jpg" data-fancybox="gallery">
-                                    <img src="assets/images/gallery/gl6.jpg" alt="image gallery">
+                                <a href="assets/images/gallery6.jpeg" data-fancybox="gallery">
+                                    <img src="assets/images/gallery6.jpeg" alt="image gallery"style="height: 63px;">
                                 </a>
                             </div>
 
