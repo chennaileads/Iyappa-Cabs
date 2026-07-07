@@ -98,98 +98,7 @@
 .call {
   animation-delay: 1.5s;
 }
- @media (max-width: 768px) {
-        .desktop-header {
-            display: none !important;
-        }
-        
-        .tariff-row {
-            display: grid !important;
-            grid-template-columns: 1fr 1fr !important;
-            padding: 14px 16px !important;
-            gap: 6px 12px !important;
-            border-left: 3px solid transparent !important;
-        }
-        
-        .tariff-row:first-of-type {
-            border-left-color: #F8D94B!important;
-        }
-        
-        .tariff-row > div {
-            text-align: left !important;
-        }
-        
-        .tariff-row > div:first-child {
-            grid-column: 1 / -1 !important;
-            margin-bottom: 2px;
-        }
-        
-        .tariff-row > div:first-child span.seater-desk {
-            display: inline !important;
-            font-size: 0.2rem !important;
-        }
-        
-        .tariff-row > div:nth-child(2) {
-            text-align: left !important;
-        }
-        
-        .tariff-row > div:nth-child(2) span {
-            display: inline !important;
-            font-size: 0.2rem !important;
-            color: #6b7a8f;
-        }
-        
-        .tariff-row > div:nth-child(2) span:first-child {
-            font-size: clamp(0.9rem, 2.5vw, 1rem) !important;
-            color: #18C3CF;
-            font-weight: 700;
-        }
-        
-        .tariff-row > div:nth-child(3),
-        .tariff-row > div:nth-child(4),
-        .tariff-row > div:nth-child(5) {
-            font-size: clamp(0.75rem, 1.8vw, 0.85rem) !important;
-        }
-        
-        .tariff-row > div:nth-child(3)::before,
-        .tariff-row > div:nth-child(4)::before,
-        .tariff-row > div:nth-child(5)::before {
-            display: block;
-            font-size: 0.5rem;
-            color: #6b7a8f;
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 0.3px;
-        }
-        
-        .tariff-row > div:nth-child(3)::before { content: "Extra KM"; }
-        .tariff-row > div:nth-child(4)::before { content: "Batta"; }
-        .tariff-row > div:nth-child(5)::before { content: "Seats"; }
-        
-        /* Hide the "12 Hrs • 200 KM" on mobile (shown inline above) */
-        .tariff-row > div:nth-child(2) span:last-child {
-            display: none !important;
-        }
-        
-        .tariff-row > div:nth-child(2) span:first-child {
-            display: block !important;
-        }
-    }
 
-    @media (max-width: 480px) {
-        .tariff-row {
-            padding: 12px 12px !important;
-            gap: 4px 8px !important;
-        }
-        .tariff-row > div:first-child span.seater-desk {
-            font-size: 10px !important;
-        }
-        .tariff-row > div:nth-child(3)::before,
-        .tariff-row > div:nth-child(4)::before,
-        .tariff-row > div:nth-child(5)::before {
-            font-size: 10px;
-        }
-    }
 </style>
 <body class="body header-fixed ">
 
@@ -701,183 +610,190 @@
 </section>
 <!-- Widget Archive Car Rental - End -->
 
-<!-- Professional Tariff Card - Iyappa Cabs (Fully Responsive) -->
-<section class="tariff-section" style="padding: 40px 0 60px; background: linear-gradient(180deg, #f8faff 0%, #eef3f8 100%);">
-    <div class="tf-container">
-        <div class="row">
-            <div class="col-lg-12">
+<!-- Professional Tariff Card - Iyappa Cabs (Clean Version) -->
+<!-- Professional Tariff Card - Iyappa Cabs (Clean Version) -->
+<section class="tariff-grid-section" style="padding: 40px 0 60px; background: linear-gradient(180deg, #f8faff 0%, #eef3f8 100%); font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;">
+    <div style="max-width: 1100px; margin: 0 auto; padding: 0 20px;">
 
-                <!-- Header -->
-                <div style="text-align: center; margin-bottom: 40px;">
-                    <div style="display: inline-block; background: #18C3CF; padding: 5px 22px; border-radius: 30px; margin-bottom: 10px;">
-                        <span style="color: #F8D94B; font-weight: 600; font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase;">2026 • Official Tariff</span>
-                    </div>
-                    <h2 style="color: #18C3CF; font-weight: 800; font-size: clamp(1.6rem, 4vw, 2.4rem); margin: 0 0 6px;">Vehicle Rental Rates</h2>
-                    <p style="color: #6b7a8f; max-width: 500px; margin: 0 auto; font-size: clamp(0.85rem, 1.2vw, 0.95rem);">
-                        Transparent pricing • No hidden charges • Book with confidence
-                    </p>
+        <!-- Header -->
+        <div style="text-align: center; margin-bottom: 40px;">
+            <div style="display: inline-block; background: #1a2a4a; padding: 5px 22px; border-radius: 30px; margin-bottom: 10px;">
+                <span style="color: #c8962d; font-weight: 600; font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase;">2026 • Official Tariff</span>
+            </div>
+            <h2 style="color: #1a2a4a; font-weight: 800; font-size: clamp(1.6rem, 4vw, 2.4rem); margin: 0 0 6px;">Iyappa Cabs – Coimbatore</h2>
+            <p style="color: #6b7a8f; max-width: 500px; margin: 0 auto; font-size: clamp(0.85rem, 1.2vw, 0.95rem);">
+                Transparent pricing • No hidden charges • Book with confidence
+            </p>
+        </div>
+
+        <!-- All packages as cards + grids (no tables) -->
+
+        <!-- Local 2H -->
+        <div style="background: #ffffff; border-radius: 16px; padding: 24px 24px 20px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border-left: 4px solid #c8962d;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 12px;">
+                <div>
+                    <span style="background: #c8962d; color: #1a2a4a; font-size: 0.6rem; font-weight: 700; padding: 2px 14px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Local Package</span>
+                    <h4 style="color: #1a2a4a; font-size: 1.1rem; font-weight: 700; margin: 8px 0 0;">Local Pickup & Drop</h4>
                 </div>
-
-                <!-- Tariff Table Wrapper - Responsive -->
-                <div style="background: #ffffff; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 50px rgba(26, 42, 74, 0.08); border: 1px solid #e8edf4;">
-                    
-                    <!-- Desktop Table Header (hidden on mobile) -->
-                    <div class="desktop-header" style="display: grid; grid-template-columns: 1.3fr 1fr 1.2fr 1fr 1fr; background: #18C3CF; padding: 14px 20px; gap: 8px; align-items: center;">
-                        <div style="color: #ffffff; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px;">Vehicle</div>
-                        <div style="color: #F8D94B; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; text-align: center;">Day Rent</div>
-                        <div style="color: #ffffff; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; text-align: center;">Extra KM</div>
-                        <div style="color: #ffffff; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; text-align: center;">Batta</div>
-                        <div style="color: #ffffff; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; text-align: center;">Seats</div>
-                    </div>
-
-                    <!-- Urbania - Highlighted -->
-                    <div class="tariff-row" style="display: grid; grid-template-columns: 1.3fr 1fr 1.2fr 1fr 1fr; padding: 14px 20px; gap: 8px; align-items: center; background: linear-gradient(90deg, rgba(200, 150, 45, 0.08), rgba(200, 150, 45, 0.02)); border-bottom: 2px solid #F8D94B; border-left: 4px solid #F8D94B;">
-                        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                            <span style="background: #F8D94B; color: #18C3CF; font-size: 0.5rem; font-weight: 700; padding: 2px 10px; border-radius: 12px; text-transform: uppercase; letter-spacing: 0.5px;">Premium</span>
-                            <div>
-                                <span style="color: #18C3CF; font-weight: 700; font-size: clamp(0.85rem, 1.1vw, 1rem); display: block; line-height: 1.2;">Urbania</span>
-                                <span style="color: #6b7a8f; font-size: 0.65rem; display: none;" class="seater-desk">14 Seater • Luxury Van</span>
-                            </div>
-                        </div>
-                        <div style="text-align: center;">
-                            <span style="color: #18C3CF; font-weight: 800; font-size: clamp(0.95rem, 1.2vw, 1.1rem);">₹7,000</span>
-                            <span style="color: #6b7a8f; font-size: 12px; display: block;">12 Hrs • 200 KM</span>
-                        </div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.9rem);">₹30/km</div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.9rem);">₹500</div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.9rem);">14</div>
-                    </div>
-
-                    <!-- Innova Hycross -->
-                    <div class="tariff-row" style="display: grid; grid-template-columns: 1.3fr 1fr 1.2fr 1fr 1fr; padding: 12px 20px; gap: 8px; align-items: center; border-bottom: 1px solid #eef3f8;">
-                        <div>
-                            <span style="color: #18C3CF; font-weight: 700; font-size: clamp(0.85rem, 1.1vw, 0.95rem); display: block; line-height: 1.2;">Innova Hycross</span>
-                            <span style="color: #6b7a8f; font-size: 0.65rem; display: none;" class="seater-desk">7 Seater • Premium SUV</span>
-                        </div>
-                        <div style="text-align: center;">
-                            <span style="color: #18C3CF; font-weight: 700; font-size: clamp(0.9rem, 1.1vw, 1rem);">₹3,500</span>
-                            <span style="color: #6b7a8f; font-size: 12px; display: block;">12 Hrs • 200 KM</span>
-                        </div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.85rem);">₹22/km</div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.85rem);">₹500</div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.85rem);">7</div>
-                    </div>
-
-                    <!-- Innova Crysta -->
-                    <div class="tariff-row" style="display: grid; grid-template-columns: 1.3fr 1fr 1.2fr 1fr 1fr; padding: 12px 20px; gap: 8px; align-items: center; border-bottom: 1px solid #eef3f8;">
-                        <div>
-                            <span style="color: #18C3CF; font-weight: 700; font-size: clamp(0.85rem, 1.1vw, 0.95rem); display: block; line-height: 1.2;">Innova Crysta</span>
-                            <span style="color: #6b7a8f; font-size: 0.65rem; display: none;" class="seater-desk">7 Seater • Premium MPV</span>
-                        </div>
-                        <div style="text-align: center;">
-                            <span style="color: #18C3CF; font-weight: 700; font-size: clamp(0.9rem, 1.1vw, 1rem);">₹3,000</span>
-                            <span style="color: #6b7a8f; font-size: 12px; display: block;">12 Hrs • 200 KM</span>
-                        </div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.85rem);">₹16/km</div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.85rem);">₹500</div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.85rem);">7</div>
-                    </div>
-
-                    <!-- Innova -->
-                    <div class="tariff-row" style="display: grid; grid-template-columns: 1.3fr 1fr 1.2fr 1fr 1fr; padding: 12px 20px; gap: 8px; align-items: center; border-bottom: 1px solid #eef3f8;">
-                        <div>
-                            <span style="color: #18C3CF; font-weight: 700; font-size: clamp(0.85rem, 1.1vw, 0.95rem); display: block; line-height: 1.2;">Innova</span>
-                            <span style="color: #6b7a8f; font-size: 0.65rem; display: none;" class="seater-desk">7 Seater • MPV</span>
-                        </div>
-                        <div style="text-align: center;">
-                            <span style="color: #18C3CF; font-weight: 700; font-size: clamp(0.9rem, 1.1vw, 1rem);">₹2,100</span>
-                            <span style="color: #6b7a8f; font-size: 12px; display: block;">12 Hrs • 200 KM</span>
-                        </div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.85rem);">₹15/km</div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.85rem);">₹400</div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.85rem);">7</div>
-                    </div>
-
-                    <!-- Tempo Traveller -->
-                    <div class="tariff-row" style="display: grid; grid-template-columns: 1.3fr 1fr 1.2fr 1fr 1fr; padding: 12px 20px; gap: 8px; align-items: center; border-bottom: 1px solid #eef3f8;">
-                        <div>
-                            <span style="color: #18C3CF; font-weight: 700; font-size: clamp(0.85rem, 1.1vw, 0.95rem); display: block; line-height: 1.2;">Tempo Traveller</span>
-                            <span style="color: #6b7a8f; font-size: 0.65rem; display: none;" class="seater-desk">14+1 Seater • AC</span>
-                        </div>
-                        <div style="text-align: center;">
-                            <span style="color: #18C3CF; font-weight: 700; font-size: clamp(0.9rem, 1.1vw, 1rem);">₹3,500</span>
-                            <span style="color: #6b7a8f; font-size: 12px; display: block;">12 Hrs • 200 KM</span>
-                        </div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.85rem);">₹18-20/km</div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.85rem);">₹400</div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.85rem);">14</div>
-                    </div>
-
-                    <!-- Dzire / Etios -->
-                    <div class="tariff-row" style="display: grid; grid-template-columns: 1.3fr 1fr 1.2fr 1fr 1fr; padding: 12px 20px; gap: 8px; align-items: center; border-bottom: 1px solid #eef3f8;">
-                        <div>
-                            <span style="color: #18C3CF; font-weight: 700; font-size: clamp(0.85rem, 1.1vw, 0.95rem); display: block; line-height: 1.2;">Dzire / Etios</span>
-                            <span style="color: #6b7a8f; font-size: 0.65rem; display: none;" class="seater-desk">4 Seater • Sedan</span>
-                        </div>
-                        <div style="text-align: center;">
-                            <span style="color: #18C3CF; font-weight: 700; font-size: clamp(0.9rem, 1.1vw, 1rem);">₹1,800</span>
-                            <span style="color: #6b7a8f; font-size: 12px; display: block;">12 Hrs • 200 KM</span>
-                        </div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.85rem);">₹10/km</div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.85rem);">₹350</div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.85rem);">4</div>
-                    </div>
-
-                    <!-- Ciaz -->
-                    <div class="tariff-row" style="display: grid; grid-template-columns: 1.3fr 1fr 1.2fr 1fr 1fr; padding: 12px 20px; gap: 8px; align-items: center;">
-                        <div>
-                            <span style="color: #18C3CF; font-weight: 700; font-size: clamp(0.85rem, 1.1vw, 0.95rem); display: block; line-height: 1.2;">Ciaz</span>
-                            <span style="color: #6b7a8f; font-size: 0.65rem; display: none;" class="seater-desk">4 Seater • Luxury Sedan</span>
-                        </div>
-                        <div style="text-align: center;">
-                            <span style="color: #18C3CF; font-weight: 700; font-size: clamp(0.9rem, 1.1vw, 1rem);">₹2,500</span>
-                            <span style="color: #6b7a8f; font-size: 12px; display: block;">12 Hrs • 200 KM</span>
-                        </div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.85rem);">₹12/km</div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.85rem);">₹350</div>
-                        <div style="text-align: center; color: #18C3CF; font-weight: 600; font-size: clamp(0.8rem, 1vw, 0.85rem);">4</div>
-                    </div>
-
+                <div style="text-align: right;">
+                    <span style="color: #6b7a8f; font-size: 0.8rem;">⏱ 2 Hours</span>
+                    <span style="color: #c8962d; font-weight: 600; font-size: 0.8rem; display: block;">30 KM Coverage</span>
                 </div>
-
-                <!-- Urbania Special Highlight -->
-                <div style="margin-top: 22px; background: linear-gradient(135deg, #18C3CF, #243b5e); border-radius: 14px; padding: 14px 22px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; border: 1px solid #F8D94B;">
-                    <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
-                        <span style="color: #F8D94B; font-weight: 700; font-size: clamp(0.95rem, 1.5vw, 1.1rem);">🚐 Urbania Special</span>
-                        <span style="color: #b8c9e8; font-size: clamp(0.75rem, 1vw, 0.9rem);">Day Rent: <strong style="color: #ffffff;">₹7,000</strong></span>
-                        <span style="color: #b8c9e8; font-size: clamp(0.75rem, 1vw, 0.9rem);">Extra KM: <strong style="color: #ffffff;">₹30/km</strong></span>
-                        <span style="color: #b8c9e8; font-size: clamp(0.75rem, 1vw, 0.9rem);">12 Hrs / 100 KM: <strong style="color: #F8D94B;">₹9,000</strong></span>
-                    </div>
-                    <span style="color: #F8D94B; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 1px;">★ Premium Luxury</span>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;">
+                <div style="background: #f8faff; padding: 10px 14px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;">
+                    <span style="color: #1a2a4a; font-weight: 600; font-size: 0.85rem;">Etios / Dzire</span>
+                    <span style="color: #c8962d; font-weight: 700; font-size: 0.95rem;">₹1,200</span>
                 </div>
-
-                <!-- Terms & GST -->
-                <div style="margin-top: 25px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; background: #ffffff; padding: 14px 20px; border-radius: 12px; border: 1px solid #e8edf4; box-shadow: 0 4px 15px rgba(0,0,0,0.04);">
-                    <div style="display: flex; flex-wrap: wrap; gap: 10px 18px;">
-                        <span style="color: #6b7a8f; font-size: clamp(0.7rem, 0.9vw, 0.8rem);"><i class="fas fa-check-circle" style="color: #F8D94B; margin-right: 4px;"></i> Toll – Extra</span>
-                        <span style="color: #6b7a8f; font-size: clamp(0.7rem, 0.9vw, 0.8rem);"><i class="fas fa-check-circle" style="color: #F8D94B; margin-right: 4px;"></i> Parking – Extra</span>
-                        <span style="color: #6b7a8f; font-size: clamp(0.7rem, 0.9vw, 0.8rem);"><i class="fas fa-check-circle" style="color: #F8D94B; margin-right: 4px;"></i> Permit – Extra</span>
-                        <span style="color: #6b7a8f; font-size: clamp(0.7rem, 0.9vw, 0.8rem);"><i class="fas fa-check-circle" style="color: #F8D94B; margin-right: 4px;"></i> Night Halt – Extra</span>
-                        <span style="color: #6b7a8f; font-size: clamp(0.7rem, 0.9vw, 0.8rem);"><i class="fas fa-check-circle" style="color: #F8D94B; margin-right: 4px;"></i> GST @ 5% Extra</span>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
-                        <span style="color: #18C3CF; font-weight: 700; font-size: clamp(0.75rem, 0.9vw, 0.9rem);">GSTIN: <span style="color: #F8D94B;">33CURPP5354B2ZH</span></span>
-                        <a href="tel:+917448876699" style="background: #18C3CF; color: #ffffff; padding: 7px 18px; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: clamp(0.75rem, 0.9vw, 0.85rem); transition: 0.3s; display: inline-flex; align-items: center; gap: 6px;">
-                            <i class="fas fa-phone-alt" style="color: #F8D94B;"></i> Book Now
-                        </a>
-                    </div>
+                <div style="background: #f8faff; padding: 10px 14px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;">
+                    <span style="color: #1a2a4a; font-weight: 600; font-size: 0.85rem;">Innova</span>
+                    <span style="color: #c8962d; font-weight: 700; font-size: 0.95rem;">₹2,000</span>
                 </div>
-
-                <!-- Note -->
-                <div style="text-align: center; margin-top: 16px;">
-                    <p style="color: #6b7a8f; font-size: clamp(0.7rem, 0.9vw, 0.78rem); margin: 0;">
-                        <i class="fas fa-info-circle" style="color: #F8D94B;"></i> 
-                        All rates subject to change. KM calculated from office to office. Hill Station charges 10% extra.
-                    </p>
+                <div style="background: #f8faff; padding: 10px 14px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;">
+                    <span style="color: #1a2a4a; font-weight: 600; font-size: 0.85rem;">Innova Crysta</span>
+                    <span style="color: #c8962d; font-weight: 700; font-size: 0.95rem;">₹2,500</span>
                 </div>
-
+                <div style="background: #f8faff; padding: 10px 14px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;">
+                    <span style="color: #1a2a4a; font-weight: 600; font-size: 0.85rem;">Innova HyCross</span>
+                    <span style="color: #c8962d; font-weight: 700; font-size: 0.95rem;">₹3,000</span>
+                </div>
             </div>
         </div>
+
+        <!-- Local 4H -->
+        <div style="background: #ffffff; border-radius: 16px; padding: 24px 24px 20px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border-left: 4px solid #c8962d;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 12px;">
+                <div>
+                    <span style="background: #c8962d; color: #1a2a4a; font-size: 0.6rem; font-weight: 700; padding: 2px 14px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Local Package</span>
+                    <h4 style="color: #1a2a4a; font-size: 1.1rem; font-weight: 700; margin: 8px 0 0;">Local Pickup & Drop</h4>
+                </div>
+                <div style="text-align: right;">
+                    <span style="color: #6b7a8f; font-size: 0.8rem;">⏱ 4 Hours</span>
+                    <span style="color: #c8962d; font-weight: 600; font-size: 0.8rem; display: block;">50 KM Coverage</span>
+                </div>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;">
+                <div style="background: #f8faff; padding: 10px 14px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;">
+                    <span style="color: #1a2a4a; font-weight: 600; font-size: 0.85rem;">Etios / Dzire</span>
+                    <span style="color: #c8962d; font-weight: 700; font-size: 0.95rem;">₹1,500</span>
+                </div>
+                <div style="background: #f8faff; padding: 10px 14px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;">
+                    <span style="color: #1a2a4a; font-weight: 600; font-size: 0.85rem;">Innova</span>
+                    <span style="color: #c8962d; font-weight: 700; font-size: 0.95rem;">₹2,500</span>
+                </div>
+                <div style="background: #f8faff; padding: 10px 14px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;">
+                    <span style="color: #1a2a4a; font-weight: 600; font-size: 0.85rem;">Innova Crysta</span>
+                    <span style="color: #c8962d; font-weight: 700; font-size: 0.95rem;">₹3,000</span>
+                </div>
+                <div style="background: #f8faff; padding: 10px 14px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;">
+                    <span style="color: #1a2a4a; font-weight: 600; font-size: 0.85rem;">Innova HyCross</span>
+                    <span style="color: #c8962d; font-weight: 700; font-size: 0.95rem;">₹3,500</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day Rental -->
+        <div style="background: #ffffff; border-radius: 16px; padding: 24px 24px 20px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border-left: 4px solid #c8962d;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 12px;">
+                <div>
+                    <span style="background: #c8962d; color: #1a2a4a; font-size: 0.6rem; font-weight: 700; padding: 2px 14px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Day Package</span>
+                    <h4 style="color: #1a2a4a; font-size: 1.1rem; font-weight: 700; margin: 8px 0 0;">⭐ Day Rental Package</h4>
+                </div>
+                <div style="text-align: right;">
+                    <span style="color: #6b7a8f; font-size: 0.8rem;">⏱ 12 Hours</span>
+                    <span style="color: #c8962d; font-weight: 600; font-size: 0.8rem; display: block;">120 KM Coverage</span>
+                </div>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+                <div style="background: #f8faff; padding: 14px 16px; border-radius: 10px;">
+                    <span style="color: #1a2a4a; font-weight: 700; font-size: 0.95rem; display: block;">Etios / Dzire</span>
+                    <span style="color: #c8962d; font-weight: 700; font-size: 1rem;">₹3,500</span>
+                    <span style="color: #6b7a8f; font-size: 0.7rem; display: block;">Extra KM: ₹15/km</span>
+                </div>
+                <div style="background: #f8faff; padding: 14px 16px; border-radius: 10px;">
+                    <span style="color: #1a2a4a; font-weight: 700; font-size: 0.95rem; display: block;">Innova</span>
+                    <span style="color: #c8962d; font-weight: 700; font-size: 1rem;">₹4,500</span>
+                    <span style="color: #6b7a8f; font-size: 0.7rem; display: block;">Extra KM: ₹18/km</span>
+                </div>
+                <div style="background: #f8faff; padding: 14px 16px; border-radius: 10px;">
+                    <span style="color: #1a2a4a; font-weight: 700; font-size: 0.95rem; display: block;">Innova Crysta</span>
+                    <span style="color: #c8962d; font-weight: 700; font-size: 1rem;">₹5,500</span>
+                    <span style="color: #6b7a8f; font-size: 0.7rem; display: block;">Extra KM: ₹20/km</span>
+                </div>
+                <div style="background: #f8faff; padding: 14px 16px; border-radius: 10px;">
+                    <span style="color: #1a2a4a; font-weight: 700; font-size: 0.95rem; display: block;">Innova HyCross</span>
+                    <span style="color: #c8962d; font-weight: 700; font-size: 1rem;">₹6,000</span>
+                    <span style="color: #6b7a8f; font-size: 0.7rem; display: block;">Extra KM: ₹22/km</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Outstation 1 Day -->
+        <div style="background: #ffffff; border-radius: 16px; padding: 24px 24px 20px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border-left: 4px solid #c8962d;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 12px;">
+                <div>
+                    <span style="background: #c8962d; color: #1a2a4a; font-size: 0.6rem; font-weight: 700; padding: 2px 14px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Outstation Package</span>
+                    <h4 style="color: #1a2a4a; font-size: 1.1rem; font-weight: 700; margin: 8px 0 0;">🌄 One Day Outstation Package</h4>
+                </div>
+                <div style="text-align: right;">
+                    <span style="color: #6b7a8f; font-size: 0.8rem;">📏 400 KM</span>
+                    <span style="color: #c8962d; font-weight: 600; font-size: 0.8rem; display: block;">Per KM Basis</span>
+                </div>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+                <div style="background: #f8faff; padding: 14px 16px; border-radius: 10px;">
+                    <span style="color: #1a2a4a; font-weight: 700; font-size: 0.95rem; display: block;">Etios / Dzire</span>
+                    <span style="color: #c8962d; font-weight: 700; font-size: 1rem;">₹15/km</span>
+                    <span style="color: #6b7a8f; font-size: 0.7rem; display: block;">Driver Batta: ₹400</span>
+                </div>
+                <div style="background: #f8faff; padding: 14px 16px; border-radius: 10px;">
+                    <span style="color: #1a2a4a; font-weight: 700; font-size: 0.95rem; display: block;">Innova</span>
+                    <span style="color: #c8962d; font-weight: 700; font-size: 1rem;">₹19/km</span>
+                    <span style="color: #6b7a8f; font-size: 0.7rem; display: block;">Driver Batta: ₹500</span>
+                </div>
+                <div style="background: #f8faff; padding: 14px 16px; border-radius: 10px;">
+                    <span style="color: #1a2a4a; font-weight: 700; font-size: 0.95rem; display: block;">Innova Crysta</span>
+                    <span style="color: #c8962d; font-weight: 700; font-size: 1rem;">₹22/km</span>
+                    <span style="color: #6b7a8f; font-size: 0.7rem; display: block;">Driver Batta: ₹500</span>
+                </div>
+                <div style="background: #f8faff; padding: 14px 16px; border-radius: 10px;">
+                    <span style="color: #1a2a4a; font-weight: 700; font-size: 0.95rem; display: block;">Innova HyCross</span>
+                    <span style="color: #c8962d; font-weight: 700; font-size: 1rem;">₹24/km</span>
+                    <span style="color: #6b7a8f; font-size: 0.7rem; display: block;">Driver Batta: ₹500</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Terms & Conditions -->
+        <div style="background: #1a2a4a; border-radius: 16px; padding: 24px 28px; margin-top: 10px;">
+            <h4 style="color: #c8962d; font-weight: 700; font-size: 1rem; margin-bottom: 12px;">📌 Terms & Conditions</h4>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px 20px;">
+                <span style="color: #b8c9e8; font-size: 0.85rem;"><i class="fas fa-check-circle" style="color: #c8962d; margin-right: 8px;"></i> Toll Charges – Extra</span>
+                <span style="color: #b8c9e8; font-size: 0.85rem;"><i class="fas fa-check-circle" style="color: #c8962d; margin-right: 8px;"></i> Parking Charges – Extra</span>
+                <span style="color: #b8c9e8; font-size: 0.85rem;"><i class="fas fa-check-circle" style="color: #c8962d; margin-right: 8px;"></i> State Permit Tax – Extra</span>
+                <span style="color: #b8c9e8; font-size: 0.85rem;"><i class="fas fa-check-circle" style="color: #c8962d; margin-right: 8px;"></i> Night Halt Charges – Extra</span>
+                <span style="color: #b8c9e8; font-size: 0.85rem;"><i class="fas fa-check-circle" style="color: #c8962d; margin-right: 8px;"></i> KM Calculated Office to Office</span>
+                <span style="color: #b8c9e8; font-size: 0.85rem;"><i class="fas fa-check-circle" style="color: #c8962d; margin-right: 8px;"></i> GST @ 5% Extra</span>
+            </div>
+        </div>
+
+        <!-- Book Now -->
+        <div style="text-align: center; margin-top: 30px; padding: 20px; background: #ffffff; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border: 1px solid #e8edf4;">
+            <h3 style="color: #1a2a4a; font-weight: 700; margin-bottom: 8px;">🚖 IYAPPA CABS – COIMBATORE</h3>
+            <p style="color: #6b7a8f; font-size: 0.9rem;">Safe • Reliable • Comfortable Travel</p>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 12px;">
+                <a href="tel:+917448876699" style="background: #c8962d; color: #1a2a4a; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 1rem; transition: 0.3s; display: inline-flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-phone-alt"></i> Book Now: 7448876699
+                </a>
+                <a href="tel:+919486117166" style="background: #1a2a4a; color: #ffffff; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 1rem; transition: 0.3s; display: inline-flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-phone-alt" style="color: #c8962d;"></i> 9486117166
+                </a>
+            </div>
+            <p style="color: #6b7a8f; font-size: 0.75rem; margin-top: 12px;">
+                <i class="fas fa-info-circle" style="color: #c8962d;"></i> All rates subject to change. Hill Station charges 10% extra.
+            </p>
+        </div>
+
     </div>
 </section>
             </main>
